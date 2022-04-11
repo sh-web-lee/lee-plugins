@@ -1,14 +1,13 @@
 <!--
-  功能：about
+  功能：Carousel-page
   作者：lee
-  时间：2022年04月10日 14:38:46
+  时间：2022年04月11日 11:30:46
   版本：v1.0
   修改人员：
   修改时间：
 -->
 <template>
-  <div class="about">
-    <h1>This is About page.</h1>
+  <div class="car-view">
     <carousel
       :autoplay="true"
       :duration="3000"
@@ -20,7 +19,7 @@
         v-for="(item, index) of carData"
         :key="index"
         >
-        <img :src="require(`../assets/img/${ item.image_name }`)" alt="">
+        <img :src="require(`@/assets/img/${ item.image_name }`)" alt="">
         </car-item>
     </carousel>
   </div>
@@ -28,10 +27,10 @@
 <script>
 import carData from '@/data/carousel'
 export default {
-  name: 'About',
-  data () {
+  name: 'Car-view',
+  setup () {
     return {
-      carData
+        carData
     }
   }
 }
