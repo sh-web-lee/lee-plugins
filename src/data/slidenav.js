@@ -7,6 +7,11 @@ export default [
                 index: '1.1',
                 path: '/carousel',
                 label: 'Carousel'
+            },
+            {
+                index: '1.2',
+                path: '/selectorpage',
+                label: 'Selector'
             }
         ]
     },

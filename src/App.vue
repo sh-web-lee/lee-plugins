@@ -6,23 +6,10 @@
         <router-view/>
       </div>
     </div>
-    <!-- <el-container>
-      <el-aside width="200px">
-        <SlideNav/>
-      </el-aside>
-      <el-container>
-        <el-header>Header</el-header>
-        <el-main>Main</el-main>
-      </el-container>
-    </el-container> -->
   </div>
 </template>
 <script>
-import SlideNav from './components/SlideNav.vue'
 export default {
-  components: {
-    SlideNav
-  },
   setup () {
     return {
 

@@ -12,7 +12,6 @@
         active-text-color="#ffd04b"
         background-color="#545c64"
         class="el-menu-vertical-demo"
-        default-active="1.1"
         text-color="#fff"
         @open="handleOpen"
         @close="handleClose"
@@ -23,7 +22,7 @@
          :index="item.index"
         >
             <template #title>
-                <span>{{ item.label }}</span>
+              <span>{{ item.label }}</span>
             </template>
             <el-menu-item
              v-for="subItem in item.children"
@@ -42,11 +41,12 @@ export default {
   name: 'SlideNav',
   setup () {
     const handleOpen = (key, keyPath) => {
-        console.log(key, keyPath)
+      console.log(key, keyPath)
     }
     const handleClose = (key, keyPath) => {
-        console.log(key, keyPath)
+      console.log(key, keyPath)
     }
+
     return {
         handleOpen,
         handleClose,
@@ -65,7 +65,7 @@ export default {
     transform: translate(0);
  }
  .is-active {
-    .view-lk {
+    &>.view-lk {
         color: #ffd04b;
     }
  }
