@@ -1,24 +1,6 @@
-# ui
+# 自定义插件库
 
-## Project setup
-```
-yarn install
-```
+## Carousel 插件
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Selector-drop-menu 插件
+    2022-4-13
